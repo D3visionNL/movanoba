@@ -1,0 +1,32 @@
+{
+  "name": "movanoba",
+  "version": "0.0.1-alpha.1",
+  "description": "A lightweight JavaScript library for animating elements while scrolling the webpage for or React, Vue, Angular, and Svelte.",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demjhonsilver/movanoba.git"
+  },
+  "keywords": [
+    "animation",
+    "animate",
+    "scroll",
+    "webpage",
+    "css",
+    "move",
+    "scrolling",
+    "web-development",
+    "javascript",
+    "typescript",
+    "react",
+    "vue",
+    "angular",
+    "svelte"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Demjhon Silver",
+  "license": "MIT"
+}
