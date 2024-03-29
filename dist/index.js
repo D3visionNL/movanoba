@@ -1,4 +1,5 @@
-import { movanoba } from './movanoba';
+
+import { movement } from './movanoba';
 
 
-export { movanoba };
+export { movement };

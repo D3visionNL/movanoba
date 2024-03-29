@@ -1,6 +1,6 @@
 const movementSet = new Set();
 
-function movement() {
+export function movement() {
   const actionElements = document.querySelectorAll('[data-movement]');
 
   const options = {

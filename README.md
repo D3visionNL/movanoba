@@ -20,6 +20,7 @@ Movanoba
 - [Release Notes](#release-notes)
 - [Installation](#installation)
 - [Features](#features)
+- [Demo](#demo)
 - [React](#react)
 - [Vue](#vue)
 - [Angular](#angular)
@@ -47,7 +48,7 @@ Frameworks / Libraries | Tested versions
 
 
 ## Release-notes
-Version 0.0.1-alpha.1
+Version 1.0.0
 
 -------
 
@@ -98,7 +99,9 @@ show, enlarge,  cycleLEFT, cycleRIGHT
 ```
 
 ------------------
+## Demo 
 
+[Demo Animations - Movanoba](https://demo-movanoba.vercel.app)
 
 ## React
 -------------
@@ -115,16 +118,16 @@ Direct method:
 
 ```js
 import { useEffect } from 'react';
-import { movanoba } from 'movanoba'; 
+import { movement } from 'movanoba'; 
 
 export const ExampleComponent = () => {
   useEffect(() => {
-    movanoba();
+    movement();
   });
 
   return (
     <div>
-      <div className="btn btn-primary" data-movanoba="frameRIGHT 0.4s">
+      <div className="btn btn-primary" data-movement="frameRIGHT 0.4s">
         frameRIGHT 
       </div>
     </div>
@@ -137,39 +140,39 @@ or
 ```js
 
 import { useEffect } from 'react';
-import { movanoba } from 'movanoba'; 
+import { movement } from 'movanoba'; 
 
 const ExampleComponent = () => {
   useEffect(() => {
-    movanoba();
+    movement();
   });
 
   return (
     <div>
-      <div className="btn btn-primary" data-movanoba="frameRIGHT 0.5s">
+      <div className="btn btn-primary" data-movement="frameRIGHT 0.5s">
         frameRIGHT
       </div>
     </div>
   );
 };
 
-export  default ExampleComponent
+export default ExampleComponent
 ```
 
 - Tailwind
 
 ```js
 import { useEffect } from 'react';
-import { movanoba } from 'movanoba'; 
+import { movement } from 'movanoba'; 
 
 export const ExampleComponent = () => {
   useEffect(() => {
-    movanoba();
+   movement();
   });
 
   return (
     <div>
-      <div className="bg-blue-500 text-white px-4 py-2" data-movanoba="frameRIGHT 4s">
+      <div className="bg-blue-500 text-white px-4 py-2" data-movement="frameRIGHT 4s">
         frameRIGHT 
       </div>
     </div>
@@ -181,16 +184,16 @@ export const ExampleComponent = () => {
 
 ```js
 import { useEffect } from 'react';
-import { movanoba } from 'movanoba'; 
+import { movement } from 'movanoba'; 
 
 export const ExampleComponent = () => {
   useEffect(() => {
-    movanoba();
+    movement();
   });
 
   return (
     <div>
-      <div className="box has-background-primary has-text-white p-4" data-movanoba="frameRIGHT">
+      <div className="box has-background-primary has-text-white p-4" data-movement="frameRIGHT">
         frameRIGHT
       </div>
     </div>
@@ -203,7 +206,7 @@ export const ExampleComponent = () => {
 ```js
 <template>
   <div>
-    <div class="btn btn-primary" data-movanoba="frameRIGHT 1.4s">
+    <div class="btn btn-primary" data-movement="frameRIGHT 1.4s">
       frameRIGHT
     </div>
   </div>
@@ -211,12 +214,12 @@ export const ExampleComponent = () => {
 
 <script>
 import { onMounted } from 'vue';
-import { movanoba } from 'movanoba';
+import { movement } from 'movanoba';
 
 export default {
   setup() {
     onMounted(() => {
-      movanoba();
+      movement();
     });
   },
 };
@@ -227,13 +230,13 @@ export default {
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import { movanoba } from 'movanoba';
+import { movement } from 'movanoba';
 
 @Component({
   selector: 'app-example',
   template: `
     <div>
-      <div class="btn btn-primary" data-movanoba-once="frameRIGHT 1.4s">
+      <div class="btn btn-primary" data-movement="frameRIGHT 1.4s">
         frameRIGHT
       </div>
     </div>
@@ -241,7 +244,7 @@ import { movanoba } from 'movanoba';
 })
 export class ExampleComponent implements OnInit {
   ngOnInit() {
-    movanoba();
+    movement();
   }
 }
 ```
@@ -251,15 +254,15 @@ export class ExampleComponent implements OnInit {
 ```js
 <script>
   import { onMount } from "svelte";
-  import { movanoba } from "movanoba";
+  import { movement } from "movanoba";
 
   onMount(() => {
-    movanoba();
+    movement();
   });
 </script>
 
 <div>
-  <div class="btn btn-primary" data-movanoba="frameRIGHT 1.4s">
+  <div class="btn btn-primary" data-movement="frameRIGHT 1.4s">
     frameRIGHT
   </div>
 </div>

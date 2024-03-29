@@ -1,6 +1,6 @@
 {
   "name": "movanoba",
-  "version": "0.0.1-alpha.1",
+  "version": "1.0.0",
   "description": "A lightweight JavaScript library for animating elements while scrolling the webpage for or React, Vue, Angular, and Svelte.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",

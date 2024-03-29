@@ -8,6 +8,6 @@ declare module 'movanoba' {
   };
 
   // Export the Movanoba function
-  export const movanoba: (options?: MovementOptions) => void;
+  export const movement: (options?: MovementOptions) => void;
 
 }
