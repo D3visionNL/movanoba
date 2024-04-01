@@ -30,7 +30,7 @@ Movanoba
 
 ## Description
 
-Movanoba is a lightweight JavaScript library for animating elements while scrolling the webpage for or React, Vue, Angular, and Svelte.
+Movanoba is a lightweight JavaScript library for animating elements while scrolling the webpage for React, Vue, Angular, and Svelte.
 
 
 
@@ -61,6 +61,8 @@ Minor Changes:
 
 Patch changes:
 
+ v1.0.1
+ - The index.js will restore default location
 
 ## Installation
 
@@ -84,7 +86,7 @@ time syntax | value | speed |
 0.5s | 0.5 seconds | fast
 1s | 1 seconds | moderate
 1.1s | 1.1 seconds | default
-2s | 2 seconds | deleay
+2s | 2 seconds | delay
 2.5s | 2.5 seconds | slow
 -----------
 
@@ -92,7 +94,7 @@ time syntax | value | speed |
 ---------
 ```html
 closeUP, closeDOWN, closeLEFT, closeRIGHT
-frameLEFT, wakeupRIGHT, wakeupLEFT, wakeupRIGHT
+frameLEFT, frameRIGHT, wakeupLEFT, wakeupRIGHT
 twistUP, twistDOWN, twistLEFT, twistRIGHT,
 edgeTOPLEFT, edgeTOPRIGHT, edgeDOWNLEFT, edgeDOWNRIGHT
 show, enlarge,  cycleLEFT, cycleRIGHT 
