@@ -5,6 +5,7 @@ declare module 'movanoba' {
   type MovementOptions = {
     movementName: string;
     movementDuration?: string;
+    movementDelay?: string;
   };
 
   // Export the Movanoba function
