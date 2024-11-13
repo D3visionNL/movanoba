@@ -45,7 +45,7 @@ export function movement() {
         const movementName = entry.target.getAttribute('data-movement');
         const triggerReflow = entry.target.getAttribute('data-reflow');
         const movementDuration = entry.target.getAttribute('data-duration') || '1.1s';
-        const movementDelay = entry.target.getAttribute('data-delay) || '0s';
+        const movementDelay = entry.target.getAttribute('data-delay') || '0s';
 
         if (entry.isIntersecting) {
           if (entry.target.style.animation !== 'none' && triggerReflow == 'true') {
