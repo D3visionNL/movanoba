@@ -44,7 +44,7 @@ export function movement() {
       entries.forEach((entry) => {
         const movementName = entry.target.getAttribute('data-movement');
         const triggerReflow = entry.target.getAttribute('data-reflow');
-        const movementDuration = entry.target.getAttribute('data-duration) || '1.1s';
+        const movementDuration = entry.target.getAttribute('data-duration') || '1.1s';
         const movementDelay = entry.target.getAttribute('data-delay) || '0s';
 
         if (entry.isIntersecting) {
@@ -58,7 +58,7 @@ export function movement() {
           entry.target.style.visibility = 'visible'; // Ensure visibility
           
           movementSet.add(entry.target);
-        } else {
+        } else if(triggerReflow == 'true'){
           // If the element is not intersecting, reverse the animation
           entry.target.style.animation = `${movementName}-reverse ${movementDuration} ${movementDelay} forwards`;
           movementSet.delete(entry.target);
