@@ -58,7 +58,7 @@ export function movement() {
           entry.target.style.visibility = 'visible'; // Ensure visibility
           
           movementSet.add(entry.target);
-        } else {
+        } else if(triggerReflow == 'true'){
           // If the element is not intersecting, reverse the animation
           entry.target.style.animation = `${movementName}-reverse ${movementDuration} ${movementDelay} forwards`;
           movementSet.delete(entry.target);
