@@ -6,6 +6,7 @@ declare module 'movanoba' {
     movementName: string;
     movementDuration?: string;
     movementDelay?: string;
+    triggerReflow?: string;
   };
 
   // Export the Movanoba function
