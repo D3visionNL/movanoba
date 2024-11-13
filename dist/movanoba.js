@@ -45,6 +45,7 @@ export function movement() {
         const actionData = entry.target.getAttribute('data-movement').split(' ');
         const movementName = actionData[0];
         const movementDuration = actionData[1] || '1.1s';
+        const movementDelay = actionData[2] || '0s';
 
         if (entry.isIntersecting) {
           if (entry.target.style.animation !== 'none') {
@@ -53,13 +54,13 @@ export function movement() {
             entry.target.offsetHeight; // Trigger a reflow
           }
 
-          entry.target.style.animation = `${movementName} ${movementDuration} forwards`;
+          entry.target.style.animation = `${movementName} ${movementDuration} ${movementDelay} forwards`;
           entry.target.style.visibility = 'visible'; // Ensure visibility
           
           movementSet.add(entry.target);
         } else {
           // If the element is not intersecting, reverse the animation
-          entry.target.style.animation = `${movementName}-reverse ${movementDuration} forwards`;
+          entry.target.style.animation = `${movementName}-reverse ${movementDuration} ${movementDelay} forwards`;
           movementSet.delete(entry.target);
         }
       });
