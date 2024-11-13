@@ -42,13 +42,13 @@ export function movement() {
   if (actionElements.length > 0) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        const actionData = entry.target.getAttribute('data-movement').split(' ');
-        const movementName = actionData[0];
-        const movementDuration = actionData[1] || '1.1s';
-        const movementDelay = actionData[2] || '0s';
+        const movementName = entry.target.getAttribute('data-movement')
+        const triggerReflow = entry.target.getAttribute('data-reflow');
+        const movementDuration = entry.target.getAttribute('data-duration) || '1.1s';
+        const movementDelay = entry.target.getAttribute('data-delay) || '0s';
 
         if (entry.isIntersecting) {
-          if (entry.target.style.animation !== 'none') {
+          if (entry.target.style.animation !== 'none' && triggerReflow == 'true') {
             // Stop the animation if it's already running
             entry.target.style.animation = 'none';
             entry.target.offsetHeight; // Trigger a reflow
